@@ -100,7 +100,7 @@
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
 							I am a second year Software Engineering Student.<br>
-							Currently looking for Summer Internship 2016 <br>
+							Currently looking for Summer Internship 2016.<br>
 							Would like to contribute to a Start-up or a Side project.
 						</div>
 					</div>
@@ -192,9 +192,9 @@
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title">My Projects</h2>
 						<div class="pfblock-line"></div>
-						<!-- <div class="pfblock-subtitle">
-							No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
-						</div> -->
+						<div class="pfblock-subtitle">
+							
+						</div>
 					</div>
 
 				</div>
@@ -439,7 +439,7 @@
 	<!-- Contact start -->
 
 	<section id="contact" class="pfblock">
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 
 				<div class="col-sm-6 col-sm-offset-3">
@@ -452,15 +452,15 @@
 						</div>
 					</div>
 
-				</div>
+				</div> -->
 
-			</div><!-- .row -->
+			<!-- </div> --><!-- .row -->
 
-			<div class="row">
+			<!-- <div class="row">
 
 				<div class="col-sm-6 col-sm-offset-3">
 
-					<form id="contact-form" role="form">
+					<form id="contact-form"  method="post" action="contact.php" name="contact-form">
 						<div class="ajax-hidden">
 							<div class="form-group wow fadeInUp">
 								<label class="sr-only" for="c_name">Name</label>
@@ -476,15 +476,21 @@
 								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
 							</div>
 
-							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+							<button type="submit" name="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
 						</div>
 						<div class="ajax-response"></div>
-					</form>
+					</form> -->
 
-				</div>
+				<!-- </div> -->
 
-			</div><!-- .row -->
-		</div><!-- .container -->
+			<!-- </div> --><!-- .row -->
+		<!-- </div> --><!-- .container -->
+		<form action="contact.php" method="post" name="contact_form">
+			Name <input name="first" type="text" />
+			E-mail <input name="email" type="text" />
+			<textarea name="textarea"></textarea>
+			<input type="submit" name="submit" id="submit" value="submit" />
+		</form>
 	</section>
 
 	<!-- Contact end -->
